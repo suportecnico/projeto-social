@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* @charset "utf-8"; para caracteres especiais */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* 
+    Configuração de reset de parâmetros de margem e preenchimento.
+    */
+}
+
+html, body {
+    height: 100vh; /*altura da viewport*/
+    width: 100vw; /*largura da viewport*/
+    background-color: black;
+}
+
+body {
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+main {
+    position: relative; /*para poder organizar a centralização dos elementos*/
+    height: 100vh;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url(../imagens/frame-iphone.png) no-repeat;
+}
+
